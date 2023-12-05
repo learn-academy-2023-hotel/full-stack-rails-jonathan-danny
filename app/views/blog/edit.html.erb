@@ -1,0 +1,12 @@
+<h2> Edit Post</h2>
+
+<%= form_with model: @blog, method: :patch do |form|%>
+<%= form.label :title %>
+<%= form.text_field :title %>
+<br/> <br/>
+<%= form.label :post %>
+<%= form.text_field :post %>
+<br/> <br/>
+<%= form.submit 'edit blog' %>
+<% end %>
+<p><%= link_to 'Home', blogs_path %> </p>
